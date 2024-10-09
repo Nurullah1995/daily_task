@@ -1,0 +1,11 @@
+androidx/annotation/Keep.class
+androidx/core/app/CoreComponentFactory$a.class
+androidx/core/app/CoreComponentFactory.class
+androidx/window/core/ExperimentalWindowApi.class
+androidx/window/embedding/SplitRule$LayoutDir.class
+kotlin/coroutines/jvm/internal/f.class
+v/a.class
+v/b.class
+v/c.class
+v/d.class
+v/e.class

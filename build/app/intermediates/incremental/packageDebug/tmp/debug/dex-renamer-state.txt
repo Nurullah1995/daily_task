@@ -1,0 +1,7 @@
+#Wed Oct 09 18:23:59 BDT 2024
+base.0=/Users/md.nurullah/mrz_development/flutter_project/Daily_task/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+base.1=/Users/md.nurullah/mrz_development/flutter_project/Daily_task/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

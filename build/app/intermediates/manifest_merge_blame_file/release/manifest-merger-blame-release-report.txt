@@ -1,0 +1,125 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_project"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:2:5-66
+11-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:2:22-64
+12    <!--
+13         Required to query activities that can process text, see:
+14         https://developer.android.com/training/package-visibility?hl=en and
+15         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+16
+17         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+18    -->
+19    <queries>
+19-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:43:5-48:15
+20        <intent>
+20-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:44:9-47:18
+21            <action android:name="android.intent.action.PROCESS_TEXT" />
+21-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:45:13-72
+21-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:45:21-70
+22
+23            <data android:mimeType="text/plain" />
+23-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:46:13-50
+23-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:46:19-48
+24        </intent>
+25    </queries>
+26
+27    <uses-permission android:name="android.permission.VIBRATE" />
+27-->[:flutter_local_notifications] /Users/md.nurullah/mrz_development/flutter_project/Daily_task/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-66
+27-->[:flutter_local_notifications] /Users/md.nurullah/mrz_development/flutter_project/Daily_task/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-63
+28    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+28-->[:flutter_local_notifications] /Users/md.nurullah/mrz_development/flutter_project/Daily_task/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-77
+28-->[:flutter_local_notifications] /Users/md.nurullah/mrz_development/flutter_project/Daily_task/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-74
+29
+30    <application
+31        android:name="android.app.Application"
+31-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:6:9-42
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.6.0] /Users/md.nurullah/.gradle/caches/transforms-3/2579a7de00054bf46a8dbc332552f622/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+33        android:icon="@mipmap/ic_launcher"
+33-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:7:9-43
+34        android:label="flutter_project" >
+34-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:5:9-40
+35        <activity
+35-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:8:9-31:20
+36            android:name="com.example.flutter_project.MainActivity"
+36-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:9:13-41
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+37-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:13:13-163
+38            android:exported="true"
+38-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:10:13-36
+39            android:hardwareAccelerated="true"
+39-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:14:13-47
+40            android:launchMode="singleTop"
+40-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:11:13-43
+41            android:theme="@style/LaunchTheme"
+41-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:12:13-47
+42            android:windowSoftInputMode="adjustResize" >
+42-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:15:13-55
+43
+44            <!--
+45                 Specifies an Android theme to apply to this Activity as soon as
+46                 the Android process has started. This theme is visible to the user
+47                 while the Flutter UI initializes. After that, this theme continues
+48                 to determine the Window background behind the Flutter UI.
+49            -->
+50            <meta-data
+50-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:20:13-23:17
+51                android:name="io.flutter.embedding.android.NormalTheme"
+51-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:21:15-70
+52                android:resource="@style/NormalTheme" />
+52-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:22:15-52
+53            <meta-data
+53-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:24:13-26:58
+54                android:name="com.google.firebase.messaging.default_notification_channel_id"
+54-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:25:17-93
+55                android:value="your_default_channel_id" />
+55-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:26:17-56
+56
+57            <intent-filter>
+57-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:27:13-30:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:28:17-68
+58-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:28:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:29:17-76
+60-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:29:27-74
+61            </intent-filter>
+62        </activity>
+63        <!--
+64             Don't delete the meta-data below.
+65             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+66        -->
+67        <meta-data
+67-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:34:9-36:33
+68            android:name="flutterEmbedding"
+68-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:35:13-44
+69            android:value="2" />
+69-->/Users/md.nurullah/mrz_development/flutter_project/Daily_task/android/app/src/main/AndroidManifest.xml:36:13-30
+70
+71        <uses-library
+71-->[androidx.window:window:1.0.0-beta04] /Users/md.nurullah/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+72            android:name="androidx.window.extensions"
+72-->[androidx.window:window:1.0.0-beta04] /Users/md.nurullah/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+73            android:required="false" />
+73-->[androidx.window:window:1.0.0-beta04] /Users/md.nurullah/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+74        <uses-library
+74-->[androidx.window:window:1.0.0-beta04] /Users/md.nurullah/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+75            android:name="androidx.window.sidecar"
+75-->[androidx.window:window:1.0.0-beta04] /Users/md.nurullah/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+76            android:required="false" />
+76-->[androidx.window:window:1.0.0-beta04] /Users/md.nurullah/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+77    </application>
+78
+79</manifest>
