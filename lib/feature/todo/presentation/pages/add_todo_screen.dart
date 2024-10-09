@@ -49,12 +49,6 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
                     border: InputBorder.none, // No border
                     hintText: 'Untitled List (0)',
                   ),
-                  onSubmitted: (str) {
-                    //   context.read<AddTodoBloc>().add(AddListOfTodoEvent(listOfItem: str));
-                    context
-                        .read<AddTodoBloc>()
-                        .add(AddNoteTitle(listOfItem: str));
-                  },
                 );
               },
             ),
@@ -91,28 +85,49 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
             builder: (context, state) {
               return GestureDetector(
                 onTap: () {
+                   if(_listOfTodoController.text.isEmpty || _listOfTodoController.text==''){
+                     context
+                         .read<AddTodoBloc>()
+                         .add(AddNoteTitle(listOfItem: 'Untitled List'));
+                     showModalBottomSheet(
+                       context: context,
+                       isScrollControlled: true,
+                       shape: RoundedRectangleBorder(
+                         borderRadius:
+                         BorderRadius.vertical(top: Radius.circular(20)),
+                       ),
+                       builder: (BuildContext context) {
+                         return Padding(
+                           padding: EdgeInsets.only(
+                             bottom: MediaQuery.of(context).viewInsets.bottom,
+                           ),
+                           child: BottomSheetContent(),
+                         );
+                       },
+                     );
+                   }else{
+                     context
+                         .read<AddTodoBloc>()
+                         .add(AddNoteTitle(listOfItem:_listOfTodoController.text.trim()));
+                     showModalBottomSheet(
+                       context: context,
+                       isScrollControlled: true,
+                       shape: RoundedRectangleBorder(
+                         borderRadius:
+                         BorderRadius.vertical(top: Radius.circular(20)),
+                       ),
+                       builder: (BuildContext context) {
+                         return Padding(
+                           padding: EdgeInsets.only(
+                             bottom: MediaQuery.of(context).viewInsets.bottom,
+                           ),
+                           child: BottomSheetContent(),
+                         );
+                       },
+                     );
+                   }
 
-                  if (state.itemTitle == '') {
-                    context
-                        .read<AddTodoBloc>()
-                        .add(AddNoteTitle(listOfItem: 'Untitled List'));
-                  }
-                  showModalBottomSheet(
-                    context: context,
-                    isScrollControlled: true,
-                    shape: RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.vertical(top: Radius.circular(20)),
-                    ),
-                    builder: (BuildContext context) {
-                      return Padding(
-                        padding: EdgeInsets.only(
-                          bottom: MediaQuery.of(context).viewInsets.bottom,
-                        ),
-                        child: BottomSheetContent(),
-                      );
-                    },
-                  );
+
                 },
                 child: Container(
                   color: Colors.white,
